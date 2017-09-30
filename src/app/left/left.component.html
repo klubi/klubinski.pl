@@ -1,0 +1,21 @@
+<div class="app-box">
+  <h4 class="my-name">{{myAccount.myname}}</h4>
+  <p><i class="fa fa-briefcase fa-fw app-margin-right"></i>{{myAccount.mytitle}} </p>
+  <p><i class="fa fa-home fa-fw app-margin-right"></i>{{myAccount.myLocation}} </p>
+  <p><i class="fa fa-envelope fa-fw app-margin-right"></i>{{myAccount.myEmail}} </p>
+  <p><i class="fa fa-phone fa-fw app-margin-right"></i>{{myAccount.myPhone}} </p>
+  <hr>
+  <p class="large"><i class="fa fa-asterisk app-margin-right"></i>Skills</p>
+  <div *ngFor="let tech of myAccount.techs" style="display: flex; justify-content: space-between; align-items: center">
+    <p>{{tech.name}}:</p>
+    <div class="large" style="display: flex; margin-bottom: 1rem">
+      <i class="fa fa-star" *ngFor="let number of getFull(tech.level)"></i>
+      <i class="fa fa-star-o" *ngFor="let number of getEmpty(tech.level)"></i>
+    </div>
+  </div>
+  <br/>
+  <p class="large"><i class="fa fa-globe app-margin-right"></i>Languages</p>
+  <div *ngFor="let lang of myAccount.languages" style="display: flex; justify-content: space-between; align-items: center">
+    <p>{{lang.language}}:</p><b style="margin-bottom: 1rem">{{lang.level}}</b>
+  </div>
+</div>

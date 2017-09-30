@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+.app-box {
+  padding: 30px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.app-margin-right {
+  margin-right: 16px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+.huge {
+  font-size: 30px;
+}
+
+a {
+  color: black;
+}
