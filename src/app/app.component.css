@@ -18,3 +18,16 @@ app-left {
 app-footer {
   width: 100%;
 }
+
+@media all and (max-width: 850px){
+  .app-grid {
+    flex-flow: column;
+    align-items: center;
+  }
+  app-right {
+    width: 60%;
+  }
+  app-left {
+    width: 60%;
+  }
+}

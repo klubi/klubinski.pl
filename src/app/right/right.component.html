@@ -1,15 +1,15 @@
 <div class="app-box">
-  <p class="huge"><i class="fa fa-suitcase app-margin-right"></i>Work Experience</p>
+  <p class="huge" l10nTranslate><i class="fa fa-suitcase app-margin-right"></i>[[EXPERIENCE]]</p>
   <br/>
   <app-experience [experience]=experience *ngFor="let experience of myAccount.experience?.reverse()"></app-experience>
 </div>
 <div class="app-box">
-  <p class="huge"><i class="fa fa-book app-margin-right"></i>Courses and Certification</p>
+  <p class="huge" l10nTranslate><i class="fa fa-book app-margin-right"></i>[[COURSES]]</p>
   <br/>
   <app-course [course]=course *ngFor="let course of myAccount.courses?.reverse()"></app-course>
 </div>
 <div class="app-box">
-  <p class="huge"><i class="fa fa-clock-o app-margin-right"></i>After Hours</p>
+  <p class="huge" l10nTranslate><i class="fa fa-clock-o app-margin-right"></i>[[AFTER]]</p>
   <br/>
   <app-after-hours [afterHours]=afterH *ngFor="let afterH of myAccount.afterHours?.reverse()"></app-after-hours>
 </div>

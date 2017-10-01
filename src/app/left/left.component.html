@@ -5,7 +5,7 @@
   <p><i class="fa fa-envelope fa-fw app-margin-right"></i>{{myAccount.myEmail}} </p>
   <p><i class="fa fa-phone fa-fw app-margin-right"></i>{{myAccount.myPhone}} </p>
   <hr>
-  <p class="large"><i class="fa fa-asterisk app-margin-right"></i>Skills</p>
+  <p class="large" l10nTranslate><i class="fa fa-asterisk app-margin-right"></i>[[SKILLS]]</p>
   <div *ngFor="let tech of myAccount.techs" style="display: flex; justify-content: space-between; align-items: center">
     <p>{{tech.name}}:</p>
     <div class="large" style="display: flex; margin-bottom: 1rem">
@@ -14,7 +14,7 @@
     </div>
   </div>
   <br/>
-  <p class="large"><i class="fa fa-globe app-margin-right"></i>Languages</p>
+  <p class="large" l10nTranslate><i class="fa fa-globe app-margin-right"></i>[[LANGUAGES]]</p>
   <div *ngFor="let lang of myAccount.languages" style="display: flex; justify-content: space-between; align-items: center">
     <p>{{lang.language}}:</p><b style="margin-bottom: 1rem">{{lang.level}}</b>
   </div>

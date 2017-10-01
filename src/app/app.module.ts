@@ -8,6 +8,8 @@ import {RightComponent} from './right/right.component';
 import {ExperienceComponent} from './elements/experience/experience.component';
 import {CourseComponent} from './elements/course/course.component';
 import {AfterHoursComponent} from './elements/after-hours/after-hours.component';
+import {LocaleService, TranslationModule, TranslationService} from 'angular-l10n';
+import {HttpModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,23 @@ import {AfterHoursComponent} from './elements/after-hours/after-hours.component'
     AfterHoursComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    TranslationModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
+  constructor(public locale: LocaleService, public translation: TranslationService) {
+    this.locale.addConfiguration()
+      .addLanguages(['pl', 'en'])
+      .setCookieExpiration(30)
+      .defineLanguage('en');
+
+    this.translation.addConfiguration()
+      .addProvider('./assets/locale-');
+
+    this.translation.init();
+  }
 }
