@@ -1,4 +1,16 @@
-<h5>{{experience.title}} @ {{experience.company}}</h5>
-<h6><i class="fa fa-calendar fa-fw app-margin-right"></i>{{experience.dates}}</h6>
-<p>{{experience.description}}</p>
-<hr>
+<div data-toggle="modal" [attr.data-target]="'#' + experience.company.split(' ').join('')">
+  <h5>{{experience.title}} @ {{experience.company}}</h5>
+  <h6><i class="fa fa-calendar fa-fw app-margin-right"></i>{{experience.dates}}</h6>
+  <hr>
+</div>
+
+<div id="{{experience.company.split(' ').join('')}}" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>{{experience.description}}</p>
+      </div>
+    </div>
+
+  </div>
+</div>

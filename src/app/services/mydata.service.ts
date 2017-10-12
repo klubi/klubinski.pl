@@ -35,19 +35,29 @@ export class MyAccount {
       'title': 'Test Engineer',
       'company': 'ista Shared Service',
       'dates': 'Mar 2011 - Oct 2012',
-      // 'description': 'Lorem'
+      'description': 'I was mainly focused on preparing automated tests of invoice issuing service. ' +
+      'Tests were covering UI as well as transactions which were the heart of the system. ' +
+      'Tests were prepared using HP UFT (formerly HP QTP).'
     },
     {
       'title': 'Test Engineer / QA Supervisor',
       'company': 'Kroll Ontrack',
       'dates': 'Nov 2012 - Nov 2015',
-      // 'description': 'Lorem'
+      'description': 'During my work for Kroll Ontrack I was preparing automated tests for two projects, ' +
+      'cloud based (Amazon Web Services) platform for processing ediscovery data, and Legal Technology platform. ' +
+      'Testing of cloud based project was done mainly with SoapUI with lots of groovy code. ' +
+      'Ediscovery platform was tested using C# framework wrapped around Selenium.'
     },
     {
       'title': 'Software Engineer in Test',
       'company': 'Jamf',
       'dates': 'Nov 2015 - Present',
-      // 'description': 'Lorem'
+      'description': 'For JamfPRO I\'ve been implementing automated tests using custom Java framework wrapped around ' +
+      'Selenium. I was also working on extending framework functionality which apart from Selenium and UI testing ' +
+      'included VNC library and custom Database communication library. ' +
+      'For JamfNow I\'m working on set of tools which allow to test whole MDM platform. This includes Java framework ' +
+      'wrapped around Selenium, Java framework for REST tests, Postman REST tests, custom JMeter listeners for ' +
+      'performance tests, other tools and scripts that allow for more targeted exploratory testing.'
     }
   ];
   courses = [
