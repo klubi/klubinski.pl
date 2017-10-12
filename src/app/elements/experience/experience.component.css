@@ -1,5 +1,6 @@
 p {
   font-size: 14px;
+  white-space:pre-wrap;
 }
 
 h5 {
@@ -12,4 +13,10 @@ h6 {
 
 hr {
   margin: 20px 0;
+}
+
+@media (min-width: 850px) {
+  .modal-dialog {
+    max-width: 800px;
+  }
 }
