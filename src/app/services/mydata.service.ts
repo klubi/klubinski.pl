@@ -10,7 +10,7 @@ export class MyDataService {
 
 export class MyAccount {
   myname = 'Piotr Klubiński';
-  mytitle = 'Software Engineer in Test';
+  mytitle = 'Software Engineer';
   myLocation = 'Gliwice, Poland';
   myEmail = 'pklubinski@gmail.com';
   myPhone = '+48 513 944 224';
@@ -23,6 +23,8 @@ export class MyAccount {
     {'name': 'Java', 'level': 4},
     {'name': 'Selenium', 'level': 4},
     {'name': 'REST', 'level': 4},
+    {'name': 'Jenkins', 'level': 4},
+    {'name': 'Kubernetes', 'level': 3},
     {'name': 'SQL', 'level': 3},
     {'name': 'AWS', 'level': 3}
   ];
@@ -50,15 +52,16 @@ export class MyAccount {
       'Ediscovery platform was tested using C# framework wrapped around Selenium.'
     },
     {
-      'title': 'Software Engineer in Test',
+      'title': 'Software Engineer II',
       'company': 'Jamf',
       'dates': 'Nov 2015 - Present',
       'description': 'For JamfPRO I\'ve been implementing automated tests using custom Java framework wrapped around ' +
       'Selenium. \nI was also working on extending framework functionality which apart from Selenium and UI testing ' +
       'included VNC library and custom Database communication library. \n\n' +
       'For JamfNow I\'m working on set of tools which allow to test whole MDM platform. This includes Java framework ' +
-      'wrapped around Selenium, Java framework for REST tests, Postman REST tests, custom JMeter listeners for ' +
-      'performance tests, other tools and scripts that allow for more targeted exploratory testing.'
+      'wrapped around Selenium, Java framework for REST tests, Postman REST tests, contract testing, custom JMeter listeners for ' +
+      'performance tests, other tools and scripts that allow for more targeted exploratory testing.\n\n' +
+        'Apart from building test automation, I\'m building pipelines that cover multiple aspects and support Continuous Deployment.'
     }
   ];
   courses = [
